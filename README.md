@@ -98,7 +98,18 @@ Strong success criteria let the LLM loop independently. Weak criteria ("make it 
 
 ## Install
 
-**Option A: Claude Code Plugin (recommended)**
+**Option A: Codex Skill**
+
+Use Codex's `$skill-installer` with this repository path:
+```
+$skill-installer Tangchao213/andrej-karpathy-skills skills/karpathy-guidelines
+```
+
+This installs the guidelines as a Codex skill for your local Codex setup. The
+repository also includes `.codex-plugin/plugin.json` so the skill can be packaged
+as a Codex plugin.
+
+**Option B: Claude Code Plugin (recommended)**
 
 From within Claude Code, first add the marketplace:
 ```
@@ -112,7 +123,7 @@ Then install the plugin:
 
 This installs the guidelines as a Claude Code plugin, making the skill available across all your projects.
 
-**Option B: CLAUDE.md (per-project)**
+**Option C: CLAUDE.md (per-project)**
 
 New project:
 ```bash
